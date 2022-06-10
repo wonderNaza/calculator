@@ -10,24 +10,27 @@
   <body>
     <div class="host">
       <div class="grid-container">
-        <div class="boxcal item1 button">0</div>
-        <div class="boxcal item2 button">7</div>
-        <div class="boxcal item3 button">8</div>
-        <div class="boxcal item4 button">9</div>
-        <div class="boxcal item5 button">/</div>
-        <div class="boxcal item6 button">4</div>
-        <div class="boxcal item7 button">5</div>
-        <div class="boxcal item8 button">6</div>
-        <div class="boxcal item9 button">x</div>
-        <div class="boxcal item10 button">1</div>
-        <div class="boxcal item11 button">2</div>
-        <div class="boxcal item12 button">3</div>
-        <div class="boxcal item13 button">-</div>
-        <div class="boxcal item14 button">0</div>
-        <div class="boxcal item15 button">.</div>
-        <div class="boxcal item16 button">+</div>
-        <div class="boxcal item17 button">=</div>
+        <input type="text" placeholder = "0" class="item1" value=""disabled></input>
+        <div onclick="display('7')" class="item2">7</div>
+        <div onclick="display('8')" class="boxcal item3 button">8</div>
+        <div onclick="display('9')" class="boxcal item4 button">9</div>
+        <div onclick="display('/')" class="boxcal item5 button">/</div>
+        <div onclick="display('4')" class="boxcal item6 button">4</div>
+        <div onclick="display('5')" class="boxcal item7 button">5</div>
+        <div onclick="display('6')" class="boxcal item8 button">6</div>
+        <div onclick="display('*')" class="boxcal item9 button">*</div>
+        <div onclick="display('1')" class="boxcal item10 button">1</div>
+        <div onclick="display('2')" class="boxcal item11 button">2</div>
+        <div onclick="display('3')" class="boxcal item12 button">3</div>
+        <div onclick="display('-')" class="boxcal item13 button">-</div>
+        <div onclick="display('0')" class="boxcal item14 button">0</div>
+        <div onclick="display('.')" class="boxcal item15 button">.</div>
+        <div onclick="display('+')" class="boxcal item16 button">+</div>
+        <div onclick="clearScreen()" class="clear">C</div>
+
+        <div onclick="solve()" class="boxcal item17 button">=</div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
